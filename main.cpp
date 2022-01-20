@@ -46,9 +46,8 @@ int main(void) {
 		if (guess.length() == word.length())
 			evalAccuracy(guess, word);
 		else if (guess.length() != word.length())
-			printf("You must enter a word that is %d letters long \n", word.length());
+			printf("You must enter a word that is %lu letters long \n", word.length());
+    else if (guess == word)
+      printf("Congrats! You got it right!")
 	}
-	
-
-
 }
